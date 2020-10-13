@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Toxic Comment Classifier</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style/toxic-classifier.css">
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css'>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/toxicity"></script>    
+  </head>  
+  <body>
+        <main id="toxicity-classifier">
+            <div class="row mb-5">
+              <div class="col-xs-12 col-md-3"><img src="img/enquero.png" style="width:120px"/></div>
+              <div class="col-xs-12 col-md-9"><h4 style="margin-left:130px; font-family: cursive;">Sentiment Analysis for Texts</h4></div> 
+            </div>
+            
+            <p>Enter text below and click 'Classify' to add it to the table.</p>
+            <div class="row">
+              <div class="col-12">
+                <textarea id="classify-new-text-input" placeholder="Enter text to check the Sentiment Analysis "></textarea>
+                <button id="btn-classify" class="btn btn-primary">Classify</button>
+              </div>
+                
+               
+            </div>
+            <h5 class="description">Result:</h5>
+            <div id="table-wrapper">
+            </div>
+            
+                      
+        </main>
+
+    <script src="js/toxic-classifier.js"></script>
+  </body>
+</html>
