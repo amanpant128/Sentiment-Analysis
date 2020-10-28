@@ -1,5 +1,5 @@
 const sampleComments = [
-    'That cheese is very good yes of course that is because you stink like a pig'
+    'Testing'
     ];
 
 // The minimum prediction confidence.
